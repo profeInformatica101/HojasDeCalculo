@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc Open Oficce</title>
+</head>
+<body>
+    <h1>Conceptos básicos de Hojas de Calculo</h1>
+    <img src="https://raw.githubusercontent.com/catedu/libreOffice-la-suite-ofimatica-libre/master/img/interfazCalc.png" alt="conceptos basicos">
+<p>Los conceptos básicos de las hojas de cálculo incluyen:</p>
+    <ul>
+        <li><b>Libro:</b> nombre del archivo, en Excel (*.xlsx) y Libre Office Calc (*.ods). En el ejemplo se llama "Sin titulo 1"</li>
+        <li><b>Hojas:</b> cada archivo está formado por varias hojas. En principio consta de 3 hojas pero se pueden ampliar hasta 255. Cada hoja presenta una cuadricula formada por 256 columnas y 65.536 filas</li>
+        <li><b>Celda:</b> son las casillas donde se introducen los datos en una hoja de cálculo. Cada celda tiene una dirección única basada en su columna (letra) y fila (número).</li>
+        <li><b>Celda activa:</b> es la celda sobre la que se sitúa el cursor, preparado para trabajar con ella. Se identifica porque aparece más remarcada que las demás. En la imágen (A1)</li>
+         <li><b>Filas:</b> conjunto de celdas horizontales. Cada fila se nombra con números: desde 1 hasta 65.536</li>
+         <li><b>Columnas:</b> conjunto de celdas verticals. Cada columna se nombra por las letras: A, B, C, ... X, Y, Z, AA, AB, AC... IV.</li>
+        <li><b>Rangos:</b> un rango es un conjunto de celdas seleccionadas juntas, ya sea de manera consecutiva o no. Pueden utilizarse para aplicar formato, funciones y fórmulas.</li>
+    
+        <li><b>Fórmulas:</b> son expresiones matemáticas que se utilizan para realizar cálculos en las celdas. Pueden incluir operadores matemáticos y funciones predefinidas. Ejemplo = (A1 + A2 + A3) * B2  </li>    
+       <li><b>Funciones:</b> son comandos predefinidos que realizan cálculos específicos, ejemplo =SUMA(A1:A10)</li>
+    </ul>
+
+
+
+    <h1>Libre Office Calc</h1>
+
+    <h2>Autocompletado</h2>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/1e6BAvyiQq8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    <h2>Funciones para texto</h2>    
+    <ul>
+        <li>LARGO: Devuelve el número de caracteres en una cadena de texto específica</li>
+        <li>CONCATENAR:Permite unir varias celdas o cadenas de texto en una sola.   </li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_YexylQmGv0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    <h2>Funciones matemáticas</h2>    
+    <ul>
+        <li>SUMAR: es una función matemática que permite sumar los valores de un conjunto de celdas o números. Por ejemplo, la función =SUMAR(A1:A5) suma los valores en las celdas A1 a A5</li>
+        <li>MÁXIMO: es una función matemática que devuelve el valor máximo de un conjunto de celdas o números. Por ejemplo, la función =MÁXIMO(A1:A5) devuelve el valor más alto en las celdas A1 a A5.</li>
+        <li>MÍNIMO: es una función matemática que devuelve el valor mínimo de un conjunto de celdas o números. Por ejemplo, la función =MÍNIMO(A1:A5) devuelve el valor más bajo en las celdas A1 a A5.</li>
+        <li>MEDIA ARITMÉTICA: Es una función matemática que devuelve el valor medio aritmético de un conjunto de celdas o números. Por ejemplo, la función =MEDIA(A1:A5) devuelve el promedio de los valores en las celdas A1 a A5.</li>
+    </ul>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5uGwwljge0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h2>Condicionales</h2>
+<ul>
+
+   <li>CONTAR.SI: Es una función matemática que cuenta el número de celdas en un rango que cumplen un cierto criterio. Por ejemplo, la función =CONTAR.SI(A1:A5,">10") cuenta el número de celdas en el rango A1 a A5 que tienen un valor mayor a 10.</li>
+    <li>SI: Es una función lógica que devuelve un resultado específico si una determinada condición es verdadera, y otro resultado si es falsa. Por ejemplo, la función =SI(A1>10, "Mayor a 10", "Menor a 10") devuelve "Mayor a 10" si el valor en la celda A1 es mayor a 10, y "Menor a 10" si no lo es.</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZTCSSYOUQWc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+<h2>Referencia absoluta vs relativa</h2>
+<dl>
+    <dt>Referencia absoluta</dt>
+    <dd>Es aquella que representa una dirección específica, cuando la fórmula se copia se conserva la fórmula íntegra. La referencia absoluta se determina colocando el signo de dolar ($) antes de la letra de la columna y antes del número de la fila que se quiera sea absoluto. Ejemplo: $D$3.</dd>
+
+    <dt>Referencia relativa</dt>
+    <dd>Es aquella que localiza relativamente, es decir, de acuerdo a la posición en que se encuentre la celda donde se escribió la fórmula. Indica a la hoja de cálculo la distancia de celdas hacia abajo, arriba, izquierda y derecha. Ejemplo: D3.</dd>
+
+    <dt>Referencia mixta</dt>
+    <dd>Es aquella que representa una dirección absoluta únicamente en la fila o en la columna. Ejemplo: $D3, D$3.</dd>
+</dl>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/__p1MHgQqNY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
